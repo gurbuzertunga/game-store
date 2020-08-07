@@ -20,24 +20,47 @@
 }
 nav {
   background-color: #e4e3e3;
+  color: #204051;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
-nav span {
+nav h2 {
   font-family: gothamBold;
   font-size: 24px;
-  color: #204051;
 }
 nav ul {
   display: flex;
 }
 nav li {
-  padding: 30px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 nav a {
   color: #204051;
 }
+nav a:hover {
+  color: #3b6978;
+}
 
 .logo {
   width: 50px;
+}
+
+main {
+  background-image: url(/assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 10% 0;
+}
+main h1, main p {
+  color: #84a9ac;
+  font-family: helveticaNeueLight;
+}
+
+
+.fa-sort-down {
+  bottom: 30px;
+  left: 20px;
 }

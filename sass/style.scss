@@ -38,24 +38,43 @@ $textColor: #204051;
 
 nav {
     background-color: $white;
+    color: $textColor;
     display: flex;
-    justify-content: center;
-    span {
+    align-items: center;
+    justify-content: space-around;
+    h2 {
         font-family: gothamBold;
         font-size: $titleSize;
-         color: $textColor;
     }
     ul {
         display: flex;
     }
     li {
-        padding: 30px;
+        padding-top: 5px;
+        padding-left: 20px;
     }
     a {
         color: $textColor;
+    &:hover {
+        color: $darkBlue
     }
-}
+    }
+    }
 
 .logo{
     width: 50px;
 }
+
+main {
+    background-image: url(/assets/img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 10% 0;
+    h1, p {
+        color: $lightBlue;
+        font-family: helveticaNeueLight;
+    }
+}
+
+

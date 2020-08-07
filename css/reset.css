@@ -32,5 +32,10 @@
     color: #333;
   }
   
+  button,
+  input {
+    outline: none;
+    border: none;
+  }
 
   

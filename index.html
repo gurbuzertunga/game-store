@@ -13,24 +13,49 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="">
+  <nav class="">
+    <div class="d-flex align-items-center">
       <img class="logo" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
-      <span id="company">Savant Games</span>
+      <h2 id="company">Savant Games</h2>
+      <ul>
+        <li >
+          <i class="fas fa-home"></i>
+          <a href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li >
+          <i class="fas fa-gamepad"></i>
+          <a  href="#">Games</a>
+        </li>
+        <li >
+          <i class="fas fa-shopping-cart"></i>
+          <a  href="#">My Cart</a>
+        </li>
+      </ul>
     </div>
-    <ul>
-      <li class="">
-        <i class="fas fa-home"></i>
-        <a href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="">
-        <a  href="#">Games</a>
-      </li>
-      <li class="">
-        <a  href="#">Bucket List</a>
-      </li>
-    </ul>
+    <div>
+      <span>Sir Whoopass</span>
+      <i class="fas fa-user px-2"></i>
+    </div>
   </nav>
+  <main class="d-flex flex-column align-items-center justify-content-center">
+    
+      <h1 class="row justify-content-center">SAVANT GAMES</h1>
+      <p class="row justify-content-center">Best prices for gamers arond the World!</p>
+    <div class="d-flex">
+      <div class="py-1 position-relative btn">
+        <input type="text" name="games" placeholder="Genres" class="p-3 text-center">
+        <i class="fas fa-sort-down position-absolute"></i>
+      </div>
+      <div class="py-1 position-relative btn">
+        <input type="text" name="price" placeholder="Price Range" class="p-3 text-center">
+        <i class="fas fa-sort-down position-absolute"></i>
+      </div>
+      <div class="py-1 position-relative btn">
+        <input type="text" name="games" placeholder="Sale Type" class="p-3 text-center">
+        <i class="fas fa-sort-down position-absolute"></i>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
