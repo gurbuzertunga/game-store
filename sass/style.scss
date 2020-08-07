@@ -1,0 +1,61 @@
+// variables
+
+$white: #e4e3e3;
+$lightBlue: #84a9ac;
+$darkBlue: #3b6978;
+$headerSize: 46px;
+$titleSize: 24px;
+$textColor: #204051;
+
+// font-families
+
+@font-face {
+    font-family: gothamBold;
+    src: url(/assets/Gotham_Bold.otf);
+  }
+  
+  @font-face {
+    font-family: gothamRoundedLight;
+    src: url(/assets/Gotham_Rounded_Light.otf);
+  }
+  
+  @font-face {
+    font-family: helveticaNeueLight;
+    src: url(/assets/Helvetica_Neue_Light.ttf);
+  }
+  
+  @font-face {
+    font-family: helveticaNeueMedium;
+    src: url(/assets/Helvetica_Neue_Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: helveticaNeueBold;
+    src: url(/assets/Helvetica_Neue_Bold.ttf);
+  }
+
+// end of font families
+
+nav {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    span {
+        font-family: gothamBold;
+        font-size: $titleSize;
+         color: $textColor;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 30px;
+    }
+    a {
+        color: $textColor;
+    }
+}
+
+.logo{
+    width: 50px;
+}

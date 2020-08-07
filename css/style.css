@@ -1,0 +1,43 @@
+@font-face {
+  font-family: gothamBold;
+  src: url(/assets/Gotham_Bold.otf);
+}
+@font-face {
+  font-family: gothamRoundedLight;
+  src: url(/assets/Gotham_Rounded_Light.otf);
+}
+@font-face {
+  font-family: helveticaNeueLight;
+  src: url(/assets/Helvetica_Neue_Light.ttf);
+}
+@font-face {
+  font-family: helveticaNeueMedium;
+  src: url(/assets/Helvetica_Neue_Medium.ttf);
+}
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(/assets/Helvetica_Neue_Bold.ttf);
+}
+nav {
+  background-color: #e4e3e3;
+  display: flex;
+  justify-content: center;
+}
+nav span {
+  font-family: gothamBold;
+  font-size: 24px;
+  color: #204051;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: 30px;
+}
+nav a {
+  color: #204051;
+}
+
+.logo {
+  width: 50px;
+}
