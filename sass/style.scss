@@ -73,7 +73,14 @@ main {
     padding: 10% 0;
     h1, p {
         color: $lightBlue;
-        font-family: helveticaNeueLight;
+        font-family: gothicBold;
+    }
+    .fa-sort-down {
+      bottom: 20px;
+      left: 20px;
+    &:hover{
+      color: blue
+    }
     }
 }
 

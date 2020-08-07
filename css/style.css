@@ -56,11 +56,12 @@ main {
 }
 main h1, main p {
   color: #84a9ac;
-  font-family: helveticaNeueLight;
+  font-family: gothicBold;
 }
-
-
-.fa-sort-down {
-  bottom: 30px;
+main .fa-sort-down {
+  bottom: 20px;
   left: 20px;
+}
+main .fa-sort-down:hover {
+  color: blue;
 }
