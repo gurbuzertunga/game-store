@@ -85,3 +85,8 @@ section .ads-more {
   bottom: 5px;
   right: 15px;
 }
+
+footer {
+  background-color: #84a9ac;
+  color: #e4e3e3;
+}
