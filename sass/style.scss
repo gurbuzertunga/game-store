@@ -61,11 +61,22 @@ nav {
     }
     }
 
+body {
+  background-color: $white;
+  font-family: helveticaNeueLight;
+  button,
+    input {
+      outline: none;
+      border: none;
+      background-color: #84a9ac;
+    }
+}    
+
 .logo{
     width: 50px;
 }
 
-main {
+.search-area {
     background-image: url(/assets/img/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,6 +93,16 @@ main {
       color: blue
     }
     }
+}
+
+section {
+  background-color: $white;
+  color: $textColor;
+  .ads-more {
+    bottom: 5px;
+    right: 15px;
+  }
+
 }
 
 

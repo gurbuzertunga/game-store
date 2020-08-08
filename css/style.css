@@ -43,25 +43,45 @@ nav a:hover {
   color: #3b6978;
 }
 
+body {
+  background-color: #e4e3e3;
+  font-family: helveticaNeueLight;
+}
+body button,
+body input {
+  outline: none;
+  border: none;
+  background-color: #84a9ac;
+}
+
 .logo {
   width: 50px;
 }
 
-main {
+.search-area {
   background-image: url(/assets/img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   padding: 10% 0;
 }
-main h1, main p {
+.search-area h1, .search-area p {
   color: #84a9ac;
   font-family: gothicBold;
 }
-main .fa-sort-down {
+.search-area .fa-sort-down {
   bottom: 20px;
   left: 20px;
 }
-main .fa-sort-down:hover {
+.search-area .fa-sort-down:hover {
   color: blue;
+}
+
+section {
+  background-color: #e4e3e3;
+  color: #204051;
+}
+section .ads-more {
+  bottom: 5px;
+  right: 15px;
 }
