@@ -58,31 +58,69 @@
         <input type="text" name="games" placeholder="Sale Type" class="py-2 px-4">
         <i class="fas fa-sort-down position-absolute"></i>
       </div>
-      <button type="submit" value="Search" class="px-3 py-2 m-auto">Search</button>
+      <button type="submit" value="Search" class="px-3 py-2 m-auto" onclick="location.href='search.html'">Search</button>
     </div>
   </section>
 
+
+
   <div class="container">
-  <section class="row justify-content-center ads">
+  <section class="row justify-content-center ads pt-3">
     <div class="card bg-transparent col-10 border-0 hot-ads">
       <h2>Hot Ads</h2>
       <div class="row no-gutters">
-          <div class="col position-relative">
-              <img src="assets/img/cyberpunk.png" class="img-fluid" alt="Cyberpunk 2077 logo">
-              <div class="position-absolute ads-more">
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card-block px-2">
+        <div id="carouselControls" class="carousel slide " data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex">
+                  <img src="assets/img/cyberpunk.png" class="" alt="Cyberpunk 2077 Logo">
+              <div class="d-flex flex-column pl-4">
                   <h4 class="card-title">Cyberpunk 2077</h4>
                   <p class="card-text text-wrap">Enter the world of Cyberpunk 2077 — a storydriven, open world RPG of the dark future from CD PROJEKT RED, creators of The Witcher series of games.</p>
                   <p class="m-o text-info">by CD PROJECT RED</p>
-                  <button type="submit" value="Search" class="px-3 py-2 m-auto">$59</button>
-                  <button type="submit" value="Search" class="px-3 py-2 m-auto">Pre-Order</button>
+                <div class="d-flex justify-content-start">
+                  <button type="submit" value="Search" class="px-3 py-2 mx-1">$59</button>
+                  <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+                </div>
               </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+                <img src="assets/img/deathloop.png" class="" alt="Deathloop Logo">
+              <div class="d-flex flex-column pl-4">
+                <h4 class="card-title">Deathloop</h4>
+                <p class="card-text text-wrap">DEATHLOOP transports you to the mysterious island of Blackreef, where an eternal struggle between two extraordinary assassins will determine the island's fate.</p>
+              <div class="d-flex justify-content-start">
+                <button type="submit" value="Search" class="px-3 py-2 mx-1">$49</button>
+                <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+              </div>
+            </div>
           </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+                <img src="assets/img/halo.png" class="" alt="Halo Logo">
+              <div class="d-flex flex-column pl-4">
+                <h4 class="card-title">Halo Infinite</h4>
+                <p class="card-text text-wrap">Halo Infinite. When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced.</p>
+              <div class="d-flex justify-content-start">
+                <button type="submit" value="Search" class="px-3 py-2 mx-1">$39</button>
+                <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon rounded-circle p-3 bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon rounded-circle p-3 bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -90,9 +128,9 @@
 
   <section class="container my-3">
     
-    <h2><i class="fas fa-dice-d20 pr-2"></i>RPG GAMES</h2>
+    <h4><i class="fas fa-dice-d20 pr-2"></i>RPG GAMES</h4>
     <div class="row border-top">
-      <div class="card col bg-transparent border-0 mx-1">
+      <div class="card col-5 col-md bg-transparent border-0 mx-1">
         <img src="assets/img/rpg/fallout4.png" class="card-img-top" alt="Fallout 4 Logo">
         <div class="card-body px-0">
           <h5 class="card-title">Fallout 4</h5>
@@ -103,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="card col bg-transparent border-0 mx-1">
+      <div class="card col-5 col-md bg-transparent border-0 mx-1">
         <img src="assets/img/rpg/masseffect.png" class="card-img-top" alt="Mass Effect 3 Logo logo">
         <div class="card-body px-0">
           <h5 class="card-title">Mass Effect 3</h5>
@@ -114,7 +152,7 @@
           </div>
         </div>
       </div>
-      <div class="card col bg-transparent border-0 mx-1">
+      <div class="card col-5 col-md bg-transparent border-0 mx-1">
         <img src="assets/img/rpg/skyrim.png" class="card-img-top" alt="Skyrim logo">
         <div class="card-body px-0">
           <h5 class="card-title">Elder Scrolls - Skyrim</h5>
@@ -125,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="card col bg-transparent border-0 mx-1">
+      <div class="card col-5 col-md bg-transparent border-0 mx-1">
         <img src="assets/img/rpg/witcher.png" class="card-img-top" alt="Witcher 3 logo">
         <div class="card-body px-0">
           <h5 class="card-title">Witcher 3</h5>
@@ -246,49 +284,44 @@
   <div class="row">
    <div class="col-3 offset-2">
     <div class="d-flex align-items-center">
-      <img src="assets/img/imperial-aquila-seeklogo.com.svg" alt="">
+      <img class="w-50 pr-2" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Compayn Logo">
       <h4>Savant Games</h4>
     </div>
       <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in asperiores tempore voluptates iusto perspiciatis corporis,    cupiditate minus magni beatae. Harum autem, soluta consequatur adipisci sint sit tempore temporibus deserunt.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in asperiores tempore voluptates iusto perspiciatis corporis,    cupiditate minus magni beatae.
       </p>
     </div>
 
-    <div class="col-6 d-flex flex-column justify-content-end">
+    <div class="col-6 d-flex flex-column justify-content-center mt-5">
       <h5 class="pb-2 border-bottom">Categories</h5>
       <div class="d-flex justify-content-between">
       <ul>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">NewsRoom</a></li>
       </ul>
       <ul>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
+        <li><a href="">Register</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Forgot Password</a></li>
+        <li><a href="">F.A.Q</a></li>
       </ul>
       <ul>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-      </ul>
-      <ul>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
+        <li><a href="">Support Hub</a></li>
+        <li><a href="">Stay Safe</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Privacy & Cookies</a></li>
+        <li><a href="">Returns & Refunds</a></li>
       </ul>
     </div>
     </div>
   </div>
   </footer>
+<!-- javascript bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>

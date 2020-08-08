@@ -70,7 +70,8 @@ body {
       border: none;
       background-color: #84a9ac;
     }
-}    
+}
+    
 
 .logo{
     width: 50px;
@@ -89,9 +90,6 @@ body {
     .fa-sort-down {
       bottom: 20px;
       left: 20px;
-    &:hover{
-      color: blue
-    }
     }
 }
 
@@ -107,7 +105,16 @@ section {
 
 footer {
   background-color: $lightBlue;
-  color: $white;
+  color: $textColor;
+  a {
+    color: $textColor;
+    padding: 5px;
+    border-radius: 5px;
+  &:hover {
+    background-color: $textColor;
+    color: $white;
+  }
+  }
 }
 
 

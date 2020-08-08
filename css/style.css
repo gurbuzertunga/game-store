@@ -73,9 +73,6 @@ body input {
   bottom: 20px;
   left: 20px;
 }
-.search-area .fa-sort-down:hover {
-  color: blue;
-}
 
 section {
   background-color: #e4e3e3;
@@ -88,5 +85,14 @@ section .ads-more {
 
 footer {
   background-color: #84a9ac;
+  color: #204051;
+}
+footer a {
+  color: #204051;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer a:hover {
+  background-color: #204051;
   color: #e4e3e3;
 }
