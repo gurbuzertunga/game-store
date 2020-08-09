@@ -1,11 +1,13 @@
 // variables
 
 $white: #e4e3e3;
-$lightBlue: #84a9ac;
-$darkBlue: #3b6978;
+/* $lightBlue: #84a9ac; */
+$lightGray: #888;
+/* $darkBlue: #3b6978; */
+$weirdPink: #d35266;
 $headerSize: 46px;
 $titleSize: 24px;
-$textColor: #204051;
+$textColor: #383838;
 
 // font-families
 
@@ -37,14 +39,15 @@ $textColor: #204051;
 // end of font families
 
 nav {
-    background-color: $white;
-    color: $textColor;
+    background-color: $textColor;
+    color: $weirdPink;
     display: flex;
     align-items: center;
     justify-content: space-around;
     h2 {
         font-family: gothamBold;
         font-size: $titleSize;
+        color: $white;
     }
     ul {
         display: flex;
@@ -54,9 +57,9 @@ nav {
         padding-left: 20px;
     }
     a {
-        color: $textColor;
+        color: $weirdPink;
     &:hover {
-        color: $darkBlue
+        color: $textColor;
     }
     }
     }
@@ -65,11 +68,21 @@ body {
   background-color: $white;
   font-family: helveticaNeueLight;
   button,
-    input {
+    input,
+    select {
       outline: none;
       border: none;
-      background-color: #84a9ac;
+      background-color: $weirdPink;
+      color: $textColor;
     }
+    ::placeholder {
+      color: $textColor;
+      opacity: 1;
+    }
+
+  h4 {
+    color: $weirdPink;
+  }  
 }
     
 
@@ -84,7 +97,7 @@ body {
     width: 100%;
     padding: 10% 0;
     h1, p {
-        color: $lightBlue;
+        color: $weirdPink;
         font-family: gothicBold;
     }
     .fa-sort-down {
@@ -104,7 +117,7 @@ section {
 }
 
 footer {
-  background-color: $lightBlue;
+  background-color: $weirdPink;
   color: $textColor;
   a {
     color: $textColor;
@@ -117,4 +130,20 @@ footer {
   }
 }
 
+.cntrl-next {
+  margin-left: 18vw;
+}
 
+.cntrl-prev {
+  margin-right: 18vw;
+}
+
+aside {
+  font-size:  13px;
+}
+
+@media screen and (max-width: 992px) {
+  .slider-img {
+    width: 200px;
+  }
+}

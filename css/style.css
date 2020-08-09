@@ -1,3 +1,5 @@
+/* $lightBlue: #84a9ac; */
+/* $darkBlue: #3b6978; */
 @font-face {
   font-family: gothamBold;
   src: url(/assets/Gotham_Bold.otf);
@@ -19,8 +21,8 @@
   src: url(/assets/Helvetica_Neue_Bold.ttf);
 }
 nav {
-  background-color: #e4e3e3;
-  color: #204051;
+  background-color: #383838;
+  color: #d35266;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,6 +30,7 @@ nav {
 nav h2 {
   font-family: gothamBold;
   font-size: 24px;
+  color: #e4e3e3;
 }
 nav ul {
   display: flex;
@@ -37,10 +40,10 @@ nav li {
   padding-left: 20px;
 }
 nav a {
-  color: #204051;
+  color: #d35266;
 }
 nav a:hover {
-  color: #3b6978;
+  color: #383838;
 }
 
 body {
@@ -48,10 +51,19 @@ body {
   font-family: helveticaNeueLight;
 }
 body button,
-body input {
+body input,
+body select {
   outline: none;
   border: none;
-  background-color: #84a9ac;
+  background-color: #d35266;
+  color: #383838;
+}
+body ::placeholder {
+  color: #383838;
+  opacity: 1;
+}
+body h4 {
+  color: #d35266;
 }
 
 .logo {
@@ -66,7 +78,7 @@ body input {
   padding: 10% 0;
 }
 .search-area h1, .search-area p {
-  color: #84a9ac;
+  color: #d35266;
   font-family: gothicBold;
 }
 .search-area .fa-sort-down {
@@ -76,7 +88,7 @@ body input {
 
 section {
   background-color: #e4e3e3;
-  color: #204051;
+  color: #383838;
 }
 section .ads-more {
   bottom: 5px;
@@ -84,15 +96,33 @@ section .ads-more {
 }
 
 footer {
-  background-color: #84a9ac;
-  color: #204051;
+  background-color: #d35266;
+  color: #383838;
 }
 footer a {
-  color: #204051;
+  color: #383838;
   padding: 5px;
   border-radius: 5px;
 }
 footer a:hover {
-  background-color: #204051;
+  background-color: #383838;
   color: #e4e3e3;
+}
+
+.cntrl-next {
+  margin-left: 18vw;
+}
+
+.cntrl-prev {
+  margin-right: 18vw;
+}
+
+aside {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 992px) {
+  .slider-img {
+    width: 200px;
+  }
 }
