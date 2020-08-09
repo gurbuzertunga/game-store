@@ -13,7 +13,7 @@
   <title>Savant Games</title>
 </head>
 
-<body>
+<body class="main-contain">
   <nav>
     <div class="d-flex align-items-center">
       <img class="logo" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
@@ -45,7 +45,7 @@
       <p class="row justify-content-center">Your friendly neighbourhood Game Store!</p>
     <div class="d-flex">
       
-        <select name="selector" class="p-3 mx-1">
+        <select name="selector" class="p-md-3 p-0 mx-1">
           <option value="Genres" selected><i class="fas fa-sort-down position-absolute"></i> Genres</option>
           <option value="rpg">RPG</option>
           <option value="fps">FPS</option>
@@ -53,18 +53,18 @@
         </select>
      
      
-        <input type="text" name="price" placeholder="Price Range" class="p-3 mx-1">
-        <input type="text" name="games" placeholder="Sale Type" class="p-3 mx-1">
+        <input type="text" name="price" placeholder="Price Range" class="p-md-3 p-0 mx-1">
+        <input type="text" name="games" placeholder="Sale Type" class="p-md-3 p-0 mx-1">
        
       
-      <button type="submit" value="Search" class="mx-3 p-3" onclick="location.href='search.html'">Search</button>
+      <button type="submit" value="Search" class="mx-3 p-md-3 p-0" onclick="location.href='search.html'">Search</button>
     </div>
   </section>
 
 
 
   <div class="container">
-  <section class="row justify-content-center ads pt-3">
+  <section class="pt-3">
     <div class="card bg-transparent border-0 hot-ads">
       
       <div class="row no-gutters">
@@ -73,7 +73,9 @@
             <h2>Hot Ads</h2>
             <div class="carousel-item active">
               <div class="d-flex">
-                  <img src="assets/img/cyberpunk.png" class="slider-img" alt="Cyberpunk 2077 Logo">
+                
+                  <img src="assets/img/cyberpunk.png" class="slider-img w-lg-100 w-25" alt="Cyberpunk 2077 Logo">
+                
               <div class="d-flex flex-column pl-4">
                   <h4 class="card-title">Cyberpunk 2077</h4>
                   <p class="card-text text-wrap">Enter the world of Cyberpunk 2077 — a storydriven, open world RPG of the dark future from CD PROJEKT RED, creators of The Witcher series of games.</p>
@@ -87,7 +89,7 @@
             </div>
             <div class="carousel-item">
               <div class="d-flex">
-                <img src="assets/img/deathloop.png" class="slider-img" alt="Deathloop Logo">
+                <img src="assets/img/deathloop.png" class="slider-img w-lg-100 w-25" alt="Deathloop Logo">
               <div class="d-flex flex-column pl-4">
                 <h4 class="card-title">Deathloop</h4>
                 <p class="card-text text-wrap">DEATHLOOP transports you to the mysterious island of Blackreef, where an eternal struggle between two extraordinary assassins will determine the island's fate.</p>
@@ -100,7 +102,7 @@
             </div>
             <div class="carousel-item">
               <div class="d-flex">
-                <img src="assets/img/halo.png" class="slider-img" alt="Halo Logo">
+                <img src="assets/img/halo.png" class="slider-img w-lg-100 w-25" alt="Halo Logo">
               <div class="d-flex flex-column pl-4">
                 <h4 class="card-title">Halo Infinite</h4>
                 <p class="card-text text-wrap">Halo Infinite. When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced.</p>
@@ -126,13 +128,13 @@
   </section>
   </div>
 
-  <section class="container-fluid my-3 px-0">
-    <div class="container">
-    <h4><i class="fas fa-dice-d20 pr-2"></i>RPG GAMES</h4>
+  <section class="my-3 px-0">
+    <h4><i class="fas fa-dice-d20 pr-2 ml-4 ml-md-auto"></i>RPG GAMES</h4>
     
-    <div class="row border-top">
-      
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/rpg/fallout4.png" class="card-img-top" alt="Fallout 4 Logo">
         <div class="card-body px-0">
           <h5 class="card-title">Fallout 4</h5>
@@ -143,7 +145,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/rpg/masseffect.png" class="card-img-top" alt="Mass Effect 3 Logo logo">
         <div class="card-body px-0">
           <h5 class="card-title">Mass Effect 3</h5>
@@ -154,7 +159,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/rpg/skyrim.png" class="card-img-top" alt="Skyrim logo">
         <div class="card-body px-0">
           <h5 class="card-title">Elder Scrolls - Skyrim</h5>
@@ -165,7 +173,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/rpg/witcher.png" class="card-img-top" alt="Witcher 3 logo">
         <div class="card-body px-0">
           <h5 class="card-title">Witcher 3</h5>
@@ -177,14 +188,20 @@
         </div>
       </div>
     </div>
+
+
   </div>
+ 
   </section>
 
-  <section class="container-fluid my-3 px-0">
-    <div class="container">    
+  <section class="my-3 px-0">
+   
     <h4><i class="fas fa-gamepad pr-2"></i>FPS GAMES</h4>
-    <div class="row border-top">
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/fps/cod.png" class="card-img-top" alt="Call of Duty Modern Warfare logo">
         <div class="card-body px-0">
           <h5 class="card-title">COD - Modern Warfare</h5>
@@ -195,7 +212,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/fps/doom.png" class="card-img-top" alt="Doom logo">
         <div class="card-body px-0">
           <h5 class="card-title">DOOM</h5>
@@ -206,7 +226,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/fps/metro.png" class="card-img-top" alt="Metro Last Light logo">
         <div class="card-body px-0">
           <h5 class="card-title">Metro Last Light</h5>
@@ -217,7 +240,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/fps/wolfenstein.png" class="card-img-top" alt="Wolfenstein Young Blood logo">
         <div class="card-body px-0">
           <h5 class="card-title">Wolfenstein Young Blood</h5>
@@ -229,14 +255,17 @@
         </div>
       </div>
     </div>
-  </div>
+
+    </div>
   </section>
 
-  <section class="container-fluid my-3 px-0">
-    <div class="container">
+  <section class="my-3 px-0">
+    
     <h4><i class="fas fa-chess-knight pr-2"></i>STRATEGY GAMES</h4>
-    <div class="row border-top">
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/strategy/civilization.png" class="card-img-top" alt="Civilization IV logo">
         <div class="card-body px-0">
           <h5 class="card-title">Civilization IV</h5>
@@ -247,7 +276,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/strategy/desperados.png" class="card-img-top" alt="Desperados 3 logo">
         <div class="card-body px-0">
           <h5 class="card-title">Desperados III</h5>
@@ -258,7 +290,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/strategy/stellaris.png" class="card-img-top" alt="Stellaris logo">
         <div class="card-body px-0">
           <h5 class="card-title">Stellaris</h5>
@@ -269,7 +304,10 @@
           </div>
         </div>
       </div>
-      <div class="card col-5 col-md bg-white p-2 m-md-1 m-3 border-secondary">
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
         <img src="assets/img/strategy/totalwar.png" class="card-img-top" alt="Total War Warhammer II logo">
         <div class="card-body px-0">
 
@@ -282,12 +320,13 @@
         </div>
       </div>
     </div>
-  </div>
+
+    </div>
   </section>
 
-  <footer class="container-fluid border-top">
+  <footer class="container-fluid">
   <div class="row">
-   <div class="col-3 offset-2">
+   <div class="col-3">
     <div class="d-flex align-items-center">
       <img class="w-50 pr-2" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Compayn Logo">
       <h4>Savant Games</h4>
@@ -298,7 +337,7 @@
     </div>
 
     <div class="col-6 d-flex flex-column justify-content-center mt-5">
-      <h5 class="pb-2 border-bottom">Categories</h5>
+      <h5 class="pb-2">Categories</h5>
       <div class="d-flex justify-content-between">
       <ul>
         <li><a href="">About Us</a></li>

@@ -46,6 +46,11 @@ nav a:hover {
   color: #383838;
 }
 
+.main-contain {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 body {
   background-color: #e4e3e3;
   font-family: helveticaNeueLight;
@@ -55,7 +60,7 @@ body input,
 body select {
   outline: none;
   border: none;
-  background-color: #d35266;
+  background-color: #e4e3e3;
   color: #383838;
 }
 body ::placeholder {
@@ -71,15 +76,16 @@ body h4 {
 }
 
 .search-area {
-  background-image: url(/assets/img/main-bg.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.3);
+  background: url(/assets/img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   padding: 10% 0;
 }
 .search-area h1, .search-area p {
-  color: #d35266;
-  font-family: gothicBold;
+  color: #e4e3e3;
+  font-family: helveticaNeueBold;
 }
 .search-area .fa-sort-down {
   bottom: 20px;
@@ -96,11 +102,19 @@ section .ads-more {
 }
 
 footer {
-  background-color: #d35266;
-  color: #383838;
+  background-color: #fff;
+  border-top: solid 1px #6c757d;
+  color: #888;
+}
+footer h4 {
+  color: #888;
+}
+footer h5 {
+  color: #d35266;
+  border-bottom: #d35266 solid 1px;
 }
 footer a {
-  color: #383838;
+  color: #888;
   padding: 5px;
   border-radius: 5px;
 }
@@ -110,19 +124,20 @@ footer a:hover {
 }
 
 .cntrl-next {
-  margin-left: 18vw;
+  margin-left: 10vw;
 }
 
 .cntrl-prev {
-  margin-right: 18vw;
+  margin-right: 10vw;
 }
 
 aside {
   font-size: 13px;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .slider-img {
-    width: 200px;
+    object-fit: 200px;
   }
 }
+ */
