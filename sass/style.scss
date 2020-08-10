@@ -44,22 +44,21 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    h2 {
+    h6 {
         font-family: gothamBold;
-        font-size: $titleSize;
         color: $white;
     }
     ul {
         display: flex;
     }
     li {
-        padding-top: 5px;
-        padding-left: 20px;
-    }
+      padding-top: 10px;
+      padding-left: 20px;
+  }
     a {
         color: $weirdPink;
     &:hover {
-        color: $textColor;
+        color: $white;
     }
     }
     }
@@ -96,7 +95,7 @@ body {
 }
 
 .search-area {
-    box-shadow: inset 0 0 0 1000px rgba(211,82,102,0.3);
+    box-shadow: inset 0 0 0 1000px rgba(211,82,102,0.8);
     background:url(/assets/img/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,11 +122,14 @@ section {
 }
 
 footer {
+  display: flex;
+  justify-content: space-around;
   background-color: #fff;
   border-top: solid 1px #6c757d;
   color: $lightGray;
   h4 {
     color: $lightGray;
+    margin: auto;
   }
   h5 {
     color: $weirdPink;
@@ -142,6 +144,8 @@ footer {
     color: $white;
   }
   }
+  
+ 
 }
 
 .cntrl-next {
@@ -156,9 +160,65 @@ aside {
   font-size:  13px;
 }
 
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .slider-img {
     object-fit: 200px;
   }
+
+  footer {
+    display: flex;
+    
+    align-items: center;
+    .company-info,
+  .footer-categories
+  {
+    flex-direction: column;
+    max-width: 50%;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+  }
 }
- */
+
+@media screen and (min-width: 992px) {
+  .company-info,
+  .company-logo,
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+  }
+  .company-info,
+  .footer-categories {
+    flex-direction: column;
+    max-width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  nav {
+    li {
+      padding-top: 10px;
+      padding-left: 20px;
+      font-size: 10px;
+  }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .company-info,
+  .footer-categories
+  {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+  }
+}
