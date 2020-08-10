@@ -20,6 +20,10 @@
 
 [Live Demo Link](https://raw.githack.com/gurbuzertunga/game-store/feature/index.html)
 
+## Video Presentation
+
+[Video Presentation Link](https://www.loom.com/share/d8139f60818a4213b772bb0ae1704ee0)
+
 ## To get a local copy up and running follow these simple example steps.
 
 ### Setup
