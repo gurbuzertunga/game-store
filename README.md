@@ -1,21 +1,24 @@
-# Project Name
+# Microverse Capstone Project - Savant Game Store
 
-> One paragraph statement about the project.
+  This Project was created by using an existing UI / UX Design by Muhammed Awad. All credits for design belong to him. You can reach him through his Behance page at: https://www.behance.net/M_Awad
 
-![screenshot](./app_screenshot.png)
+![screenshot](/assets/img/index-screenshot.png)
+![screenshot](/assets/img/search-screenshot.png)
 
 
-Additional description about the project and its features.
+  This Project has two pages. Main index page is for showroom and a search results page.
 
 ## Built With
 
 - HTML
 - CSS3
 - Font awesome icons
+- Bootstrap 4.5
+- SASS
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com)
+[Live Demo Link](https://raw.githack.com/gurbuzertunga/game-store/feature/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -39,13 +42,6 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 - Github: [@githubhandle](https://github.com/gurbuzertunga)
 - Linkedin: [linkedin](https://www.linkedin.com/in/gurbuz-ertunga-a607a2a5/)
 - Email:  gurbuzertunga@gmail.com
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-- Email:  
 
 ## Show your support
 
