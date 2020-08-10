@@ -1,9 +1,7 @@
 // variables
 
 $white: #e4e3e3;
-/* $lightBlue: #84a9ac; */
 $lightGray: #888;
-/* $darkBlue: #3b6978; */
 $weirdPink: #d35266;
 $headerSize: 46px;
 $titleSize: 24px;
@@ -12,56 +10,57 @@ $textColor: #383838;
 // font-families
 
 @font-face {
-    font-family: gothamBold;
-    src: url(/assets/Gotham_Bold.otf);
-  }
-  
-  @font-face {
-    font-family: gothamRoundedLight;
-    src: url(/assets/Gotham_Rounded_Light.otf);
-  }
-  
-  @font-face {
-    font-family: helveticaNeueLight;
-    src: url(/assets/Helvetica_Neue_Light.ttf);
-  }
-  
-  @font-face {
-    font-family: helveticaNeueMedium;
-    src: url(/assets/Helvetica_Neue_Medium.ttf);
-  }
-  
-  @font-face {
-    font-family: helveticaNeueBold;
-    src: url(/assets/Helvetica_Neue_Bold.ttf);
-  }
+  font-family: gothamBold;
+  src: url(/assets/Gotham_Bold.otf);
+}
+
+@font-face {
+  font-family: gothamRoundedLight;
+  src: url(/assets/Gotham_Rounded_Light.otf);
+}
+
+@font-face {
+  font-family: helveticaNeueLight;
+  src: url(/assets/Helvetica_Neue_Light.ttf);
+}
+
+@font-face {
+  font-family: helveticaNeueMedium;
+  src: url(/assets/Helvetica_Neue_Medium.ttf);
+}
+
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(/assets/Helvetica_Neue_Bold.ttf);
+}
 
 // end of font families
 
 nav {
-    background-color: $textColor;
-    color: $weirdPink;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    h6 {
-        font-family: gothamBold;
-        color: $white;
-    }
-    ul {
-        display: flex;
-    }
-    li {
-      padding-top: 10px;
-      padding-left: 20px;
+  background-color: $textColor;
+  color: $weirdPink;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h6 {
+    font-family: gothamBold, Arial, Helvetica, sans-serif;
+    color: $white;
   }
-    a {
-        color: $weirdPink;
-    &:hover {
-        color: $white;
-    }
-    }
-    }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  a {
+    color: $weirdPink;
+  }
+}
 
 .main-contain {
   max-width: 1400px;
@@ -70,55 +69,90 @@ nav {
 
 body {
   background-color: $white;
-  font-family: helveticaNeueLight;
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+
   button,
-    input,
-    select {
-      outline: none;
-      border: none;
-      background-color: $white;
-      color: $textColor;
-    }
-    ::placeholder {
-      color: $textColor;
-      opacity: 1;
-    }
+  input,
+  select {
+    outline: none;
+    border: none;
+    background-color: $white;
+    color: $textColor;
+  }
+
+  ::placeholder {
+    color: $textColor;
+    opacity: 1;
+  }
 
   h4 {
     color: $weirdPink;
-  }  
+  }
 }
-    
 
-.logo{
-    width: 50px;
+.logo {
+  width: 50px;
 }
 
 .search-area {
-    box-shadow: inset 0 0 0 1000px rgba(211,82,102,0.8);
-    background:url(/assets/img/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 10% 0;
-    h1, p {
-        color: $white;
-        font-family: helveticaNeueBold;
-    }
-    .fa-sort-down {
-      bottom: 20px;
-      left: 20px;
-    }
+  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.6);
+  background: url(/assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 7% 0;
+
+  h1,
+  p {
+    color: $white;
+    font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+  }
+
+  .fa-sort-down {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  button {
+    background-color: $textColor;
+    color: white;
+  }
 }
 
 section {
   background-color: $white;
   color: $textColor;
+
   .ads-more {
     bottom: 5px;
     right: 15px;
   }
+}
 
+aside {
+  font-size: 13px;
+
+  h3 {
+    border-bottom: $textColor 1px solid;
+  }
+}
+
+.accordion {
+  button,
+  .card-header {
+    background-color: $textColor;
+    color: $weirdPink;
+    font-family: gothicBold, Arial, Helvetica, sans-serif;
+
+    &:focus {
+      color: $weirdPink;
+    }
+  }
+
+  form {
+    background-color: $lightGray;
+    color: $textColor;
+  }
 }
 
 footer {
@@ -127,25 +161,27 @@ footer {
   background-color: #fff;
   border-top: solid 1px #6c757d;
   color: $lightGray;
+
   h4 {
     color: $lightGray;
     margin: auto;
   }
+
   h5 {
     color: $weirdPink;
     border-bottom: $weirdPink solid 1px;
   }
+
   a {
     color: $lightGray;
     padding: 5px;
     border-radius: 5px;
-  &:hover {
-    background-color: $textColor;
-    color: $white;
+
+    &:hover {
+      background-color: $textColor;
+      color: $white;
+    }
   }
-  }
-  
- 
 }
 
 .cntrl-next {
@@ -156,29 +192,20 @@ footer {
   margin-right: 10vw;
 }
 
-aside {
-  font-size:  13px;
-}
-
 @media screen and (max-width: 768px) {
-  .slider-img {
-    object-fit: 200px;
-  }
-
   footer {
     display: flex;
-    
     align-items: center;
-    .company-info,
-  .footer-categories
-  {
-    flex-direction: column;
-    max-width: 50%;
-  }
 
-  .footer-links {
-    display: flex;
-  }
+    .company-info,
+    .footer-categories {
+      flex-direction: column;
+      max-width: 50%;
+    }
+
+    .footer-links {
+      display: flex;
+    }
   }
 }
 
@@ -189,6 +216,7 @@ aside {
     display: flex;
     align-items: flex-start;
   }
+
   .company-info,
   .footer-categories {
     flex-direction: column;
@@ -196,29 +224,41 @@ aside {
   }
 }
 
-
 @media screen and (max-width: 500px) {
   nav {
     li {
       padding-top: 10px;
       padding-left: 20px;
-      font-size: 10px;
+    }
   }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .search-area {
+    padding: 15% 0;
   }
 
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
     .company-info,
-  .footer-categories
-  {
-    flex-direction: column;
-    max-width: 100%;
+    .footer-categories {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .footer-links,
+    .company-logo {
+      display: flex;
+    }
   }
 
-  .footer-links {
-    display: flex;
-  }
+  a {
+    font-size: 13px;
   }
 }

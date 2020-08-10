@@ -13,114 +13,198 @@
   <title>Savant Games</title>
 </head>
 
-<body >
-  <nav>
+<body class="main-contain">
+  <nav class="fixed-top d-flex no-gutters align-items-center justify-content-around">
     <div class="d-flex align-items-center">
-      <img class="logo" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
-      <h2 id="company">Savant Games</h2>
-      <ul>
-        <li >
-          <i class="fas fa-home"></i>
-          <a href="#">Home <span class="sr-only">(current)</span></a>
+      <img class="logo mr-1 d-none d-sm-block" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
+      <h6 id="company">Savant Games</h6>
+       <ul class="d-flex">
+        <li class="d-flex align-items-center">
+          <i class="fas fa-home pr-1"></i>
+          <a class="d-none d-sm-flex" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li >
-          <i class="fas fa-gamepad"></i>
-          <a  href="#">Games</a>
+        <li class="d-flex align-items-center">
+          <i class="fas fa-gamepad pr-1"></i>
+          <a class="d-none d-sm-flex" href="#">Games</a>
         </li>
-        <li >
-          <i class="fas fa-shopping-cart"></i>
-          <a  href="#">My Cart</a>
+        <li class="d-flex align-items-center">
+          <i class="fas fa-shopping-cart pr-1"></i>
+          <a class="d-none d-sm-flex" href="#">My Cart</a>
         </li>
       </ul>
     </div>
-    <div class="d-md-block d-none">
+    <div class="d-lg-block d-none">
       <span>Sir Whoopass</span>
       <i class="fas fa-user px-2"></i>
     </div>
   </nav>
+  
   <section class="d-flex flex-column align-items-center justify-content-center search-area">
     
-    <h1 class="row justify-content-center">SAVANT</h1>
-    <p class="row justify-content-center">Your friendly neighbourhood Game Store!</p>
-  <div class="d-flex">
-    
-      <select name="selector" class="">
-        <option value="Genres" selected><i class="fas fa-sort-down position-absolute"></i> Genres</option>
-        <option value="rpg">RPG</option>
-        <option value="fps">FPS</option>
-        <option value="strategy">Strategy</option>
-      </select>
-   
-   
-      <input type="text" name="price" placeholder="Price Range" class="">
-      <input type="text" name="games" placeholder="Sale Type" class="">
+      <h1 class="row justify-content-center">SAVANT</h1>
+      <p class="row justify-content-center">Your friendly neighbourhood Game Store!</p>
+    <div class="d-flex flex-column flex-sm-row">
+      
+        <select name="selector" class="p-md-3 p-0 m-1">
+          <option value="Genres" selected>Genres</option>
+          <option value="rpg">RPG</option>
+          <option value="fps">FPS</option>
+          <option value="strategy">Strategy</option>
+        </select>
      
-    
-    <button type="submit" value="Search" class="" onclick="location.href='search.html'">Search</button>
-  </div>
-</section>
+     
+        <input type="text" name="price" placeholder="Price Range" class="p-md-3 p-0 m-1">
+        <input type="text" name="games" placeholder="Sale Type" class="p-md-3 p-0 m-1">
+       
+      
+      <button type="submit" value="Search" class="p-md-3 p-0 m-1" onclick="location.href='search.html'">Search</button>
+    </div>
+  </section>
 
-<div class="container-fluid mt-4 row">
+<div class="mt-4 container row no-gutters">
 
 
-  <aside class="col-12 col-lg-2 position-sticky">
-    <form action="" class="p-2 d-flex">
-      <input type="checkbox" class="new px-2 mt-1" name="new" value="New">
-      <label class="used px-2" for="vehicle1">New</label><br>
-      <input type="checkbox" class="used px-2 mt-1" name="used" value="used">
-      <label class="used px-2 align-self-start" for="vehicle1">Second Hand</label><br>
-    </form>
+  <aside class="col-12 col-lg-2 offset-lg-1 d-none d-lg-block">
     <div class="mx-auto">
-     <h3 class="p-1 border-primary">Platform</h3> 
-    <form action="" class="p-2 border-bottom">
+    <h3 class="p-1 border-secondary">Usage</h3> 
+    <form action="#" class="py-1 pr-0 d-flex">
+      <input type="checkbox" class="new px-2 mt-1" name="new" value="New">
+      <label class="used px-2">New</label><br>
+      <input type="checkbox" class="used px-2 mt-1"  name="used" value="used">
+      <label class="used pl-1 pr-0 align-self-start">Second Hand</label>
+    </form>
+    
+     <h3 class="p-1 border-secondary">Platform</h3> 
+    <form action="#" class="py-1 border-bottom d-flex d-lg-block">
       <input type="checkbox" class="pc px-2 mt-1" name="pc" value="pc">
-      <label class="pc px-2" for="pc">PC</label><br>
+      <label class="pc px-2">PC</label><br>
       <input type="checkbox" class="ps px-2 mt-1" name="ps" value="ps">
-      <label class="ps px-2 align-self-start" for="ps">PlayStation</label><br>
+      <label class="ps px-2 align-self-start">PlayStation</label><br>
       <input type="checkbox" class="xbox px-2 mt-1" name="xbox" value="xbox">
-      <label class="xbox px-2 align-self-start" for="xbox">XBox</label><br>
+      <label class="xbox px-2 align-self-start">XBox</label><br>
     </form>
 
-    <h3 class="p-1 border-primary">Genre</h3> 
-    <form action="" class="p-2 border-bottom">
+    <h3 class="p-1 border-secondary">Genre</h3> 
+    <form action="#" class="py-1 border-bottom d-flex d-lg-block">
       <input type="checkbox" class="rpg px-2 mt-1" name="rpg" value="rpg">
-      <label class="rpg px-2" for="rpg">RPG</label><br>
+      <label class="rpg px-2">RPG</label><br>
       <input type="checkbox" class="fps px-2 mt-1" name="fps" value="fps">
-      <label class="fps px-2 align-self-start" for="fps">FPS</label><br>
+      <label class="fps px-2 align-self-start">FPS</label><br>
       <input type="checkbox" class="strategy px-2 mt-1" name="strategy" value="strategy">
-      <label class="strategy px-2 align-self-start" for="strategy">Strategy</label><br>
+      <label class="strategy px-2 align-self-start">Strategy</label><br>
     </form>
 
-    <h3 class="p-1 border-primary">Price Range</h3> 
-    <form action="" class="p-2 border-bottom">
+    <h3 class="p-1 border-secondary">Price Range</h3> 
+    <form action="#" class="py-1 border-bottom d-flex d-lg-block">
       <input type="checkbox" class="uptoten px-2 mt-1" name="uptoten" value="uptoten">
-      <label class="uptoten px-2" for="uptoten">0 - $10</label><br>
+      <label class="uptoten px-2">0 - $10</label><br>
       <input type="checkbox" class="uptotwenty px-2 mt-1" name="uptotwenty" value="uptotwenty">
-      <label class="uptotwenty px-2 align-self-start" for="uptotwenty">$10 - $20</label><br>
+      <label class="uptotwenty px-2 align-self-start">$10 - $20</label><br>
       <input type="checkbox" class="uptofifty px-2 mt-1" name="uptofifty" value="uptofifty">
-      <label class="uptofifty px-2 align-self-start" for="uptofifty">$20 - $50</label><br>
+      <label class="uptofifty px-2 align-self-start">$20 - $50</label><br>
     </form>
   </div>
   </aside>
 
 
-  <section class="col-lg-9 col-12">
+  <div class="accordion col-12 d-lg-none d-block offset-lg-1" id="accordionExample">
+
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Usage
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <form action="#" class="p-2 d-flex justify-content-center">
+          <input type="checkbox" class="new px-2 mt-1" name="new" value="New">
+          <label class="used px-2">New</label><br>
+          <input type="checkbox" class="used px-2 mt-1" name="used" value="used">
+          <label class="used px-2 align-self-start">Second Hand</label><br>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed text-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Platform
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <form action="#" class="py-1 border-bottom d-flex d-lg-block justify-content-center">
+          <input type="checkbox" class="pc px-2 mt-1" name="pc" value="pc">
+          <label class="pc px-2">PC</label><br>
+          <input type="checkbox" class="ps px-2 mt-1" name="ps" value="ps">
+          <label class="ps px-2 align-self-start">PlayStation</label><br>
+          <input type="checkbox" class="xbox px-2 mt-1" name="xbox" value="xbox">
+          <label class="xbox px-2 align-self-start">XBox</label><br>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed text-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Genre
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <form action="#" class="py-1 border-bottom d-flex d-lg-block justify-content-center">
+          <input type="checkbox" class="rpg px-2 mt-1" name="rpg" value="rpg">
+          <label class="rpg px-2">RPG</label><br>
+          <input type="checkbox" class="fps px-2 mt-1" name="fps" value="fps">
+          <label class="fps px-2 align-self-start">FPS</label><br>
+          <input type="checkbox" class="strategy px-2 mt-1" name="strategy" value="strategy">
+          <label class="strategy px-2 align-self-start">Strategy</label><br>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed text-center" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Price Range
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <form action="#" class="py-1 border-bottom d-flex d-lg-block justify-content-center">
+          <input type="checkbox" class="uptoten px-2 mt-1" name="uptoten" value="uptoten">
+          <label class="uptoten pl-2 pr-5">0 - $10</label><br>
+          <input type="checkbox" class="uptotwenty px-2 mt-1" name="uptotwenty" value="uptotwenty">
+          <label class="uptotwenty pl-2 pr-5 align-self-start">$10 - $20</label><br>
+          <input type="checkbox" class="uptofifty px-2 mt-1" name="uptofifty" value="uptofifty">
+          <label class="uptofifty pl-2 pr-5 align-self-start">$20 - $50</label><br>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="col-12 col-lg-8 offset-lg-1">
     <h3 class="text-left mt-1">5 results for Popular Games</h3>
 
     <div class="row my-3 mx-auto py-3 bg-white border-secondary">
-     
-       <img src="assets/img/cyberpunk.png" class="col-4" alt="Cyberpunk 2077 Logo">
-      
-      <div class="col-8 pl-4">
+       <img src="assets/img/cyberpunk.png" class="col-sm-4 col-12" alt="Cyberpunk 2077 Logo">
+      <div class="col-sm-8 col-12 pl-4">
        <h4 class="card-title">Cyberpunk 2077</h4>
-       <h5>Pre-Order Now!</h3>
+       <h5>Pre-Order Now!</h5>
        <p class="card-text text-wrap">Enter the world of Cyberpunk 2077 — a storydriven, open world RPG of the dark future from CD PROJEKT RED, creators of The Witcher series of games.</p>
        <p class="m-o text-info">by CD PROJECT RED</p>
        <div class="d-flex align-items-baseline justify-content-between">
-       <h5>19 / 11 / 2020</h5>
+       <h6>19 / 11 / 2020</h6>
        <div>
-       <button type="submit" value="Search" class="px-3 py-2 mx-1">$59</button>
-       <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+       <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">$59</button>
+       <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">Pre-Order</button>
        </div>
        </div>
       </div>
@@ -129,34 +213,34 @@
    
 
     <div class="row my-5 mx-auto py-3 bg-white border-secondary">
-      <img src="assets/img/deathloop.png" class="col-4" alt="Deathloop Logo">
-     <div class="col-8 pl-4">
+      <img src="assets/img/deathloop.png" class="col-sm-4 col-12" alt="Deathloop Logo">
+     <div class="col-sm-8 col-12 pl-4">
       <h4 class="card-title">Deathloop</h4>
-      <h5>Pre-Order Now!</h3>
+      <h5>Pre-Order Now!</h5>
       <p class="card-text text-wrap">DEATHLOOP transports you to the mysterious island of Blackreef, where an eternal struggle between two extraordinary assassins will determine the island's fate.</p>
       <p class="m-o text-info">by ARKANE STUDIOS</p>
       <div class="d-flex align-items-baseline justify-content-between">
-      <h5>December 2020</h5>
+      <h6>December 2020</h6>
       <div>
-      <button type="submit" value="Search" class="px-3 py-2 mx-1">$49</button>
-      <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+      <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">$49</button>
+      <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">Pre-Order</button>
       </div>
       </div>
      </div>
    </div>
 
    <div class="row my-5 mx-auto py-3 bg-white border-secondary">
-    <img src="assets/img/halo.png" class="col-4" alt="Halo Logo">
-   <div class="col-8 pl-4">
+    <img src="assets/img/halo.png" class="col-sm-4 col-12" alt="Halo Logo">
+   <div class="col-sm-8 col-12 pl-4">
     <h4 class="card-title">Halo Infinite</h4>
-    <h5>Pre-Order Now!</h3>
+    <h5>Pre-Order Now!</h5>
     <p class="card-text text-wrap">Halo Infinite. When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced.</p>
     <p class="m-o text-info">by 343 STUDIOS</p>
     <div class="d-flex align-items-baseline justify-content-between">
-    <h5>December 2020</h5>
+    <h6>December 2020</h6>
     <div>
-    <button type="submit" value="Search" class="px-3 py-2 mx-1">$39</button>
-    <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+    <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">$39</button>
+    <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">Pre-Order</button>
     </div>
     </div>
    </div>
@@ -164,34 +248,34 @@
 
 
  <div class="row my-5 mx-auto py-3 bg-white border-secondary">
-  <img src="assets/img/spiderman.png" class="col-4" alt="Halo Logo">
- <div class="col-8 pl-4">
+  <img src="assets/img/spiderman.png" class="col-sm-4 col-12" alt="Halo Logo">
+ <div class="col-sm-8 col-12 pl-4">
   <h4 class="card-title">Spider-man: Miles Morales</h4>
-  <h5>Pre-Order Now!</h3>
+  <h5>Pre-Order Now!</h5>
   <p class="card-text text-wrap">Marvel's Spider-Man: Miles Morales is an upcoming action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment for the PlayStation 5. </p>
   <p class="m-o text-info">by Insomniac Games</p>
   <div class="d-flex align-items-baseline justify-content-between">
-  <h5>December 2020</h5>
+  <h6>December 2020</h6>
   <div>
-  <button type="submit" value="Search" class="px-3 py-2 mx-1">$39</button>
-  <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+  <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">$39</button>
+  <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">Pre-Order</button>
   </div>
   </div>
  </div>
 </div> 
 
 <div class="row my-5 mx-auto py-3 bg-white border-secondary">
-  <img src="assets/img/starwars.png" class="col-4" alt="Halo Logo">
- <div class="col-8 pl-4">
+  <img src="assets/img/starwars.png" class="col-sm-4 col-12" alt="Halo Logo">
+ <div class="col-sm-8 col-12 pl-4">
   <h4 class="card-title">Star Wars: Squadrons</h4>
-  <h5>Pre-Order Now!</h3>
+  <h5>Pre-Order Now!</h5>
   <p class="card-text text-wrap">uckle up, feel the adrenaline of first-person multiplayer dogfights alongside your squadron, and take off in a thrilling STAR WARS™ story.</p>
   <p class="m-o text-info">by Electronic Arts</p>
   <div class="d-flex align-items-baseline justify-content-between">
-  <h5>2 / 10 / 2020</h5>
+  <h6>2 / 10 / 2020</h6>
   <div>
-  <button type="submit" value="Search" class="px-3 py-2 mx-1">$39</button>
-  <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+  <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">$39</button>
+  <button type="submit" value="Search" class="px-sm-3 py-sm-2 p-1 mx-1">Pre-Order</button>
   </div>
   </div>
  </div>
@@ -200,44 +284,41 @@
   </section>
 </div>
 
-  <footer class="container-fluid border-top">
-  <div class="row">
-   <div class="col-3 offset-2">
-    <div class="d-flex align-items-center">
-      <img class="w-50 pr-2" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Compayn Logo">
-      <h4>Savant Games</h4>
+<footer class="">
+  <div class="company-info">
+    <div class="company-logo">
+    <img class="logo" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
+    <h4>Savant Games</h4>
     </div>
-      <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in asperiores tempore voluptates iusto perspiciatis corporis,    cupiditate minus magni beatae.
-      </p>
-    </div>
-
-    <div class="col-6 d-flex flex-column justify-content-center mt-5">
-      <h5 class="pb-2 border-bottom">Categories</h5>
-      <div class="d-flex justify-content-between">
-      <ul>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">NewsRoom</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Register</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Forgot Password</a></li>
-        <li><a href="">F.A.Q</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Support Hub</a></li>
-        <li><a href="">Stay Safe</a></li>
-        <li><a href="">Terms & Conditions</a></li>
-        <li><a href="">Privacy & Cookies</a></li>
-        <li><a href="">Returns & Refunds</a></li>
-      </ul>
-    </div>
-    </div>
+    <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in asperiores tempore voluptates iusto perspiciatis corporis,    cupiditate minus magni beatae.
+    </p>
+  </div>  
+  
+  <div class="footer-categories">
+    <h5 class="">Categories</h5>
+  <div class="footer-links">
+    <ul>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">NewsRoom</a></li>
+    </ul>
+    <ul>
+      <li><a href="">Register</a></li>
+      <li><a href="">Login</a></li>
+      <li><a href="">Forgot Password</a></li>
+      <li><a href="">F.A.Q</a></li>
+    </ul>
+    <ul class="">
+      <li><a href="">Support Hub</a></li>
+      <li><a href="">Stay Safe</a></li>
+      <li><a href="">Terms & Conditions</a></li>
+      <li><a href="">Privacy & Cookies</a></li>
+    </ul>
   </div>
-  </footer>
+  </div>
+</footer>
 <!-- javascript bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

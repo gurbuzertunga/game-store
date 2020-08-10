@@ -1,5 +1,3 @@
-/* $lightBlue: #84a9ac; */
-/* $darkBlue: #3b6978; */
 @font-face {
   font-family: gothamBold;
   src: url(/assets/Gotham_Bold.otf);
@@ -28,7 +26,7 @@ nav {
   justify-content: space-around;
 }
 nav h6 {
-  font-family: gothamBold;
+  font-family: gothamBold, Arial, Helvetica, sans-serif;
   color: #e4e3e3;
 }
 nav ul {
@@ -41,9 +39,6 @@ nav li {
 nav a {
   color: #d35266;
 }
-nav a:hover {
-  color: #e4e3e3;
-}
 
 .main-contain {
   max-width: 1400px;
@@ -52,7 +47,7 @@ nav a:hover {
 
 body {
   background-color: #e4e3e3;
-  font-family: helveticaNeueLight;
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
 }
 body button,
 body input,
@@ -75,20 +70,25 @@ body h4 {
 }
 
 .search-area {
-  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.8);
+  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.6);
   background: url(/assets/img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 10% 0;
+  padding: 7% 0;
 }
-.search-area h1, .search-area p {
+.search-area h1,
+.search-area p {
   color: #e4e3e3;
-  font-family: helveticaNeueBold;
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
 }
 .search-area .fa-sort-down {
   bottom: 20px;
   left: 20px;
+}
+.search-area button {
+  background-color: #383838;
+  color: white;
 }
 
 section {
@@ -98,6 +98,28 @@ section {
 section .ads-more {
   bottom: 5px;
   right: 15px;
+}
+
+aside {
+  font-size: 13px;
+}
+aside h3 {
+  border-bottom: #383838 1px solid;
+}
+
+.accordion button,
+.accordion .card-header {
+  background-color: #383838;
+  color: #d35266;
+  font-family: gothicBold, Arial, Helvetica, sans-serif;
+}
+.accordion button:focus,
+.accordion .card-header:focus {
+  color: #d35266;
+}
+.accordion form {
+  background-color: #888;
+  color: #383838;
 }
 
 footer {
@@ -133,15 +155,7 @@ footer a:hover {
   margin-right: 10vw;
 }
 
-aside {
-  font-size: 13px;
-}
-
 @media screen and (max-width: 768px) {
-  .slider-img {
-    object-fit: 200px;
-  }
-
   footer {
     display: flex;
     align-items: center;
@@ -173,20 +187,33 @@ footer .footer-categories {
   nav li {
     padding-top: 10px;
     padding-left: 20px;
-    font-size: 10px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .search-area {
+    padding: 15% 0;
   }
 
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   footer .company-info,
 footer .footer-categories {
     flex-direction: column;
     max-width: 100%;
   }
-  footer .footer-links {
+  footer .footer-links,
+footer .company-logo {
     display: flex;
+  }
+
+  a {
+    font-size: 13px;
   }
 }
