@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/gurbuzertunga/game-store/feature/index.html)
+[Live Demo Link](https://gurbuzertunga.github.io/game-store/)
 
 ## Video Presentation
 
