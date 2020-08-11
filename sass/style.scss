@@ -7,6 +7,39 @@ $headerSize: 46px;
 $titleSize: 24px;
 $textColor: #383838;
 
+// color classes
+.textcolor {
+  color: $textColor;
+}
+
+.bg-textcolor {
+  background-color: $textColor;
+}
+
+.lightgray {
+  color: $lightGray;
+}
+
+.bg-lightgray {
+  background-color: $lightGray;
+}
+
+.white {
+  color: $white;
+}
+
+.bg-mainwhite {
+  background-color: $white;
+}
+
+.weirdpink {
+  color: $weirdPink;
+}
+
+.bg-weirdpink {
+  background-color: $weirdPink;
+}
+
 // font-families
 
 @font-face {
@@ -36,17 +69,32 @@ $textColor: #383838;
 
 // end of font families
 
+// generic font classes
+
+.bold-helvetica {
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+
+.bold-gothic {
+  font-family: gothicBold, Arial, Helvetica, sans-serif;
+}
+
+.medium-helvetica {
+  font-family: helveticaNeueMedium, Arial, Helvetica, sans-serif;
+}
+
+.light-helvetica {
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+}
+
+.light-gotham {
+  font-family: gothamRoundedLight, Arial, Helvetica, sans-serif;
+}
+
 nav {
-  background-color: $textColor;
-  color: $weirdPink;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  h6 {
-    font-family: gothamBold, Arial, Helvetica, sans-serif;
-    color: $white;
-  }
 
   ul {
     display: flex;
@@ -56,10 +104,6 @@ nav {
     padding-top: 10px;
     padding-left: 20px;
   }
-
-  a {
-    color: $weirdPink;
-  }
 }
 
 .main-contain {
@@ -67,10 +111,13 @@ nav {
   margin: 0 auto;
 }
 
-body {
-  background-color: $white;
-  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+.hot-ads {
+  .ads-button {
+    border-radius: 3px;
+  }
+}
 
+body {
   button,
   input,
   select {
@@ -84,9 +131,29 @@ body {
     color: $textColor;
     opacity: 1;
   }
+}
 
-  h4 {
+.showcase {
+  background-color: $white;
+  color: $textColor;
+
+  .ads-more {
+    bottom: 5px;
+    right: 15px;
+  }
+
+  .showcase-title {
+    border-bottom: $lightGray 1px solid;
+  }
+
+  .price-tag {
     color: $weirdPink;
+    font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+  }
+
+  .fa-plus {
+    border: solid 1px $textColor;
+    border-radius: 2px;
   }
 }
 
@@ -119,16 +186,6 @@ body {
   }
 }
 
-section {
-  background-color: $white;
-  color: $textColor;
-
-  .ads-more {
-    bottom: 5px;
-    right: 15px;
-  }
-}
-
 aside {
   font-size: 13px;
 
@@ -140,34 +197,27 @@ aside {
 .accordion {
   button,
   .card-header {
-    background-color: $textColor;
     color: $weirdPink;
-    font-family: gothicBold, Arial, Helvetica, sans-serif;
 
     &:focus {
       color: $weirdPink;
     }
   }
-
-  form {
-    background-color: $lightGray;
-    color: $textColor;
-  }
 }
 
-footer {
+.footer-area {
   display: flex;
   justify-content: space-around;
   background-color: #fff;
   border-top: solid 1px #6c757d;
   color: $lightGray;
 
-  h4 {
+  .footer-title {
     color: $lightGray;
     margin: auto;
   }
 
-  h5 {
+  .category-title {
     color: $weirdPink;
     border-bottom: $weirdPink solid 1px;
   }
@@ -193,7 +243,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .footer-area {
     display: flex;
     align-items: center;
 
@@ -240,7 +290,7 @@ footer {
     padding: 15% 0;
   }
 
-  footer {
+  .footer-area {
     display: flex;
     flex-direction: column;
     align-items: center;

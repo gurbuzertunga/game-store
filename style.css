@@ -1,3 +1,35 @@
+.textcolor {
+  color: #383838;
+}
+
+.bg-textcolor {
+  background-color: #383838;
+}
+
+.lightgray {
+  color: #888;
+}
+
+.bg-lightgray {
+  background-color: #888;
+}
+
+.white {
+  color: #e4e3e3;
+}
+
+.bg-mainwhite {
+  background-color: #e4e3e3;
+}
+
+.weirdpink {
+  color: #d35266;
+}
+
+.bg-weirdpink {
+  background-color: #d35266;
+}
+
 @font-face {
   font-family: gothamBold;
   src: url(/assets/Gotham_Bold.otf);
@@ -18,16 +50,30 @@
   font-family: helveticaNeueBold;
   src: url(/assets/Helvetica_Neue_Bold.ttf);
 }
+.bold-helvetica {
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+
+.bold-gothic {
+  font-family: gothicBold, Arial, Helvetica, sans-serif;
+}
+
+.medium-helvetica {
+  font-family: helveticaNeueMedium, Arial, Helvetica, sans-serif;
+}
+
+.light-helvetica {
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+}
+
+.light-gotham {
+  font-family: gothamRoundedLight, Arial, Helvetica, sans-serif;
+}
+
 nav {
-  background-color: #383838;
-  color: #d35266;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-nav h6 {
-  font-family: gothamBold, Arial, Helvetica, sans-serif;
-  color: #e4e3e3;
 }
 nav ul {
   display: flex;
@@ -36,19 +82,16 @@ nav li {
   padding-top: 10px;
   padding-left: 20px;
 }
-nav a {
-  color: #d35266;
-}
 
 .main-contain {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-body {
-  background-color: #e4e3e3;
-  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+.hot-ads .ads-button {
+  border-radius: 3px;
 }
+
 body button,
 body input,
 body select {
@@ -61,8 +104,25 @@ body ::placeholder {
   color: #383838;
   opacity: 1;
 }
-body h4 {
+
+.showcase {
+  background-color: #e4e3e3;
+  color: #383838;
+}
+.showcase .ads-more {
+  bottom: 5px;
+  right: 15px;
+}
+.showcase .showcase-title {
+  border-bottom: #888 1px solid;
+}
+.showcase .price-tag {
   color: #d35266;
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+.showcase .fa-plus {
+  border: solid 1px #383838;
+  border-radius: 2px;
 }
 
 .logo {
@@ -71,7 +131,7 @@ body h4 {
 
 .search-area {
   box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.6);
-  background: url(/game-store/assets/img/main-bg.jpg);
+  background: url(/assets/img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -91,15 +151,6 @@ body h4 {
   color: white;
 }
 
-section {
-  background-color: #e4e3e3;
-  color: #383838;
-}
-section .ads-more {
-  bottom: 5px;
-  right: 15px;
-}
-
 aside {
   font-size: 13px;
 }
@@ -109,40 +160,34 @@ aside h3 {
 
 .accordion button,
 .accordion .card-header {
-  background-color: #383838;
   color: #d35266;
-  font-family: gothicBold, Arial, Helvetica, sans-serif;
 }
 .accordion button:focus,
 .accordion .card-header:focus {
   color: #d35266;
 }
-.accordion form {
-  background-color: #888;
-  color: #383838;
-}
 
-footer {
+.footer-area {
   display: flex;
   justify-content: space-around;
   background-color: #fff;
   border-top: solid 1px #6c757d;
   color: #888;
 }
-footer h4 {
+.footer-area .footer-title {
   color: #888;
   margin: auto;
 }
-footer h5 {
+.footer-area .category-title {
   color: #d35266;
   border-bottom: #d35266 solid 1px;
 }
-footer a {
+.footer-area a {
   color: #888;
   padding: 5px;
   border-radius: 5px;
 }
-footer a:hover {
+.footer-area a:hover {
   background-color: #383838;
   color: #e4e3e3;
 }
@@ -156,16 +201,16 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .footer-area {
     display: flex;
     align-items: center;
   }
-  footer .company-info,
-footer .footer-categories {
+  .footer-area .company-info,
+.footer-area .footer-categories {
     flex-direction: column;
     max-width: 50%;
   }
-  footer .footer-links {
+  .footer-area .footer-links {
     display: flex;
   }
 }
@@ -197,19 +242,19 @@ footer .footer-categories {
     padding: 15% 0;
   }
 
-  footer {
+  .footer-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  footer .company-info,
-footer .footer-categories {
+  .footer-area .company-info,
+.footer-area .footer-categories {
     flex-direction: column;
     max-width: 100%;
   }
-  footer .footer-links,
-footer .company-logo {
+  .footer-area .footer-links,
+.footer-area .company-logo {
     display: flex;
   }
 
