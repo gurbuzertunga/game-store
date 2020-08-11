@@ -1,39 +1,284 @@
- /*
-    ==============================================
-                ****** RESET ******
-    ==============================================
-*/
-
-:root {
-  --color-red: #f42;
-  --bg-color-red: #f42;
+.textcolor {
+  color: #383838;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.bg-textcolor {
+  background-color: #383838;
 }
 
-ul {
-  list-style: none;
+.lightgray {
+  color: #888;
 }
 
-a {
-  text-decoration: none;
+.bg-lightgray {
+  background-color: #888;
+}
+
+.white {
+  color: #e4e3e3;
+}
+
+.bg-mainwhite {
+  background-color: #e4e3e3;
+}
+
+.weirdpink {
+  color: #d35266;
+}
+
+.bg-weirdpink {
+  background-color: #d35266;
+}
+
+@font-face {
+  font-family: gothamBold;
+  src: url(/assets/Gotham_Bold.otf);
+}
+@font-face {
+  font-family: gothamRoundedLight;
+  src: url(/assets/Gotham_Rounded_Light.otf);
+}
+@font-face {
+  font-family: helveticaNeueLight;
+  src: url(/assets/Helvetica_Neue_Light.ttf);
+}
+@font-face {
+  font-family: helveticaNeueMedium;
+  src: url(/assets/Helvetica_Neue_Medium.ttf);
+}
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(/assets/Helvetica_Neue_Bold.ttf);
+}
+.bold-helvetica {
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+
+.bold-gothic {
+  font-family: gothicBold, Arial, Helvetica, sans-serif;
+}
+
+.medium-helvetica {
+  font-family: helveticaNeueMedium, Arial, Helvetica, sans-serif;
+}
+
+.light-helvetica {
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+}
+
+.light-gotham {
+  font-family: gothamRoundedLight, Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.main-contain {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hot-ads .ads-button {
+  border-radius: 3px;
+}
+
+body button,
+body input,
+body select {
+  outline: none;
+  border: none;
+  background-color: #e4e3e3;
+  color: #383838;
+}
+body ::placeholder {
+  color: #383838;
+  opacity: 1;
+}
+
+.showcase {
+  background-color: #e4e3e3;
+  color: #383838;
+}
+.showcase .ads-more {
+  bottom: 5px;
+  right: 15px;
+}
+.showcase .showcase-title {
+  border-bottom: #888 1px solid;
+}
+.showcase .price-tag {
+  color: #d35266;
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+.showcase .fa-plus {
+  border: solid 1px #383838;
+  border-radius: 2px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.search-area {
+  box-shadow: inset 0 0 0 1000px #d35266;
+  background: url(/assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 7% 0;
+  position: relative;
+}
+.search-area .search-img {
+  position: absolute;
+  filter: invert(59%) sepia(1%) saturate(0%) hue-rotate(92deg) brightness(91%) contrast(89%);
+  z-index: 99;
+  width: 35%;
+  margin-top: 8vw;
+  margin-right: 60vw;
+  transform: rotate(315deg);
+}
+.search-area h1,
+.search-area p {
+  color: #e4e3e3;
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+.search-area .fa-sort-down {
+  bottom: 20px;
+  left: 20px;
+}
+.search-area button {
+  background-color: #383838;
   color: white;
 }
 
-a:hover {
-  color: #333;
+aside {
+  font-size: 13px;
+}
+aside h3 {
+  border-bottom: #383838 1px solid;
 }
 
-/*
-    ==============================================
-                ****** GLOBAL ******
-    ==============================================
-*/
+.accordion button,
+.accordion .card-header {
+  color: #d35266;
+}
+.accordion button:focus,
+.accordion .card-header:focus {
+  color: #d35266;
+}
+
+.footer-area {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: solid 1px #6c757d;
+  color: #888;
+}
+.footer-area .footer-title {
+  color: #888;
+  margin: auto;
+}
+.footer-area .category-title {
+  color: #d35266;
+  border-bottom: #d35266 solid 1px;
+}
+.footer-area a {
+  color: #888;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer-area a:hover {
+  background-color: #383838;
+  color: #e4e3e3;
+}
+
+.cntrl-next {
+  margin-left: 10vw;
+}
+
+.cntrl-prev {
+  margin-right: 10vw;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-area {
+    display: flex;
+    align-items: center;
+  }
+  .footer-area .company-info,
+.footer-area .footer-categories {
+    flex-direction: column;
+    max-width: 50%;
+  }
+  .footer-area .footer-links,
+.footer-area .company-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .company-info,
+.footer-links,
+.company-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: space-between;
+  }
+
+  .company-info {
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .footer-categories {
+    flex-direction: column;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav li {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .search-area {
+    padding: 15% 0;
+  }
+
+  .footer-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-area .company-info,
+.footer-area .footer-categories {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .footer-area .footer-links,
+.footer-area .company-logo {
+    display: flex;
+  }
+
+  a {
+    font-size: 13px;
+  }
+}

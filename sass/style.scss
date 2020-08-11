@@ -1,0 +1,335 @@
+// variables
+
+$white: #e4e3e3;
+$lightGray: #888;
+$weirdPink: #d35266;
+$headerSize: 46px;
+$titleSize: 24px;
+$textColor: #383838;
+
+// color classes
+.textcolor {
+  color: $textColor;
+}
+
+.bg-textcolor {
+  background-color: $textColor;
+}
+
+.lightgray {
+  color: $lightGray;
+}
+
+.bg-lightgray {
+  background-color: $lightGray;
+}
+
+.white {
+  color: $white;
+}
+
+.bg-mainwhite {
+  background-color: $white;
+}
+
+.weirdpink {
+  color: $weirdPink;
+}
+
+.bg-weirdpink {
+  background-color: $weirdPink;
+}
+
+// font-families
+
+@font-face {
+  font-family: gothamBold;
+  src: url(/assets/Gotham_Bold.otf);
+}
+
+@font-face {
+  font-family: gothamRoundedLight;
+  src: url(/assets/Gotham_Rounded_Light.otf);
+}
+
+@font-face {
+  font-family: helveticaNeueLight;
+  src: url(/assets/Helvetica_Neue_Light.ttf);
+}
+
+@font-face {
+  font-family: helveticaNeueMedium;
+  src: url(/assets/Helvetica_Neue_Medium.ttf);
+}
+
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(/assets/Helvetica_Neue_Bold.ttf);
+}
+
+// end of font families
+
+// generic font classes
+
+.bold-helvetica {
+  font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+}
+
+.bold-gothic {
+  font-family: gothicBold, Arial, Helvetica, sans-serif;
+}
+
+.medium-helvetica {
+  font-family: helveticaNeueMedium, Arial, Helvetica, sans-serif;
+}
+
+.light-helvetica {
+  font-family: helveticaNeueLight, Arial, Helvetica, sans-serif;
+}
+
+.light-gotham {
+  font-family: gothamRoundedLight, Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+}
+
+.main-contain {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hot-ads {
+  .ads-button {
+    border-radius: 3px;
+  }
+}
+
+body {
+  button,
+  input,
+  select {
+    outline: none;
+    border: none;
+    background-color: $white;
+    color: $textColor;
+  }
+
+  ::placeholder {
+    color: $textColor;
+    opacity: 1;
+  }
+}
+
+.showcase {
+  background-color: $white;
+  color: $textColor;
+
+  .ads-more {
+    bottom: 5px;
+    right: 15px;
+  }
+
+  .showcase-title {
+    border-bottom: $lightGray 1px solid;
+  }
+
+  .price-tag {
+    color: $weirdPink;
+    font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+  }
+
+  .fa-plus {
+    border: solid 1px $textColor;
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  width: 50px;
+}
+
+.search-area {
+  box-shadow: inset 0 0 0 1000px #d35266;
+  background: url(/assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 7% 0;
+  position: relative;
+
+  .search-img {
+    position: absolute;
+    filter: invert(59%) sepia(1%) saturate(0%) hue-rotate(92deg) brightness(91%) contrast(89%);
+    z-index: 99;
+    width: 35%;
+    margin-top: 8vw;
+    margin-right: 60vw;
+    transform: rotate(315deg);
+  }
+
+  h1,
+  p {
+    color: $white;
+    font-family: helveticaNeueBold, Arial, Helvetica, sans-serif;
+  }
+
+  .fa-sort-down {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  button {
+    background-color: $textColor;
+    color: white;
+  }
+}
+
+aside {
+  font-size: 13px;
+
+  h3 {
+    border-bottom: $textColor 1px solid;
+  }
+}
+
+.accordion {
+  button,
+  .card-header {
+    color: $weirdPink;
+
+    &:focus {
+      color: $weirdPink;
+    }
+  }
+}
+
+.footer-area {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: solid 1px #6c757d;
+  color: $lightGray;
+
+  .footer-title {
+    color: $lightGray;
+    margin: auto;
+  }
+
+  .category-title {
+    color: $weirdPink;
+    border-bottom: $weirdPink solid 1px;
+  }
+
+  a {
+    color: $lightGray;
+    padding: 5px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $textColor;
+      color: $white;
+    }
+  }
+}
+
+.cntrl-next {
+  margin-left: 10vw;
+}
+
+.cntrl-prev {
+  margin-right: 10vw;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-area {
+    display: flex;
+    align-items: center;
+
+    .company-info,
+    .footer-categories {
+      flex-direction: column;
+      max-width: 50%;
+    }
+
+    .footer-links,
+    .company-logo {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .company-info,
+  .footer-links,
+  .company-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: space-between;
+  }
+
+  .company-info {
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .footer-categories {
+    flex-direction: column;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    li {
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .search-area {
+    padding: 15% 0;
+  }
+
+  .footer-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .company-info,
+    .footer-categories {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .footer-links,
+    .company-logo {
+      display: flex;
+    }
+  }
+
+  a {
+    font-size: 13px;
+  }
+}

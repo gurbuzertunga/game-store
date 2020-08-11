@@ -4,14 +4,368 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href="#">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel='icon' href="/img/imperial-aquila-seeklogo.com.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="icon" href="/assets/img/imperial-aquila-seeklogo.com.svg">
+  <title>Savant Games</title>
 </head>
 
-<body>
-  <h1>hello world</h1>
+<body class="main-contain bg-mainwhite light-helvetica">
+  <nav class="fixed-top d-flex no-gutters align-items-center justify-content-around bg-textcolor">
+    <div class="d-flex align-items-center">
+      <img class="logo mr-1 d-none d-sm-block" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
+      <h6 id="company" class="bold-helvetica white">Savant Games</h6>
+       <ul class="d-flex">
+        <li class="d-flex align-items-center header-home weirdpink">
+          <i class="fas fa-home pr-1"></i>
+          <a class="d-none d-sm-flex header-home weirdpink" href="/game-store/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="d-flex align-items-center header-elements lightgray">
+          <i class="fas fa-gamepad pr-1"></i>
+          <a class="d-none d-sm-flex header-elements lightgray" href="#">Games</a>
+        </li>
+        <li class="d-flex align-items-center header-elements lightgray">
+          <i class="fas fa-shopping-cart pr-1"></i>
+          <a class="d-none d-sm-flex header-elements lightgray" href="#">My Cart</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-lg-block d-none">
+      <span class="header-elements bold-helvetica lightgray">Sir Whoopass</span>
+      <i class="fas fa-user px-2"></i>
+    </div>
+  </nav>
+  
+  <section class="d-flex flex-column align-items-center justify-content-center search-area">
+    <img class="search-img" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Company Logo">
+      <h1 class="row justify-content-center">SAVANT</h1>
+      <p class="row justify-content-center">Your friendly neighbourhood Game Store!</p>
+    <div class="d-flex flex-column flex-sm-row">
+      
+        <select name="selector" class="p-md-3 p-0 m-1">
+          <option value="Genres" selected>Genres</option>
+          <option value="rpg">RPG</option>
+          <option value="fps">FPS</option>
+          <option value="strategy">Strategy</option>
+        </select>
+     
+     
+        <input type="text" name="price" placeholder="Price Range" class="p-md-3 p-0 m-1">
+        <input type="text" name="games" placeholder="Sale Type" class="p-md-3 p-0 m-1">
+       
+      
+      <button type="submit" value="Search" class="p-md-3 p-0 m-1" onclick="location.href='search.html'">Search</button>
+    </div>
+  </section>
+
+
+
+  <div class="container d-none d-sm-flex">
+  <section class="pt-3 hot-ads">
+    <div class="card bg-transparent border-0 hot-ads">
+      
+      <div class="row no-gutters">
+        <div id="carouselControls" class="carousel slide " data-ride="carousel">
+          <div class="carousel-inner col-10 mx-auto">
+            <h4 class="hot-ads-title lightgray light-helvetica">Hot Ads</h4>
+            <div class="carousel-item active">
+              <div class="d-flex">
+                  <img src="assets/img/cyberpunk.png" class="slider-img w-lg-100 w-25" alt="Cyberpunk 2077 Logo">
+              <div class="d-flex flex-column pl-4">
+                  <h4 class="card-title bold-helvetica">Cyberpunk 2077</h4>
+                  <p class="card-text text-wrap light-helvetica">Enter the world of Cyberpunk 2077 — a storydriven, open world RPG of the dark future from CD PROJEKT RED, creators of The Witcher series of games.</p>
+              
+                <div class="d-flex justify-content-start">
+                  <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">$59</button>
+                  <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">Pre-Order</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+                <img src="assets/img/deathloop.png" class="slider-img w-lg-100 w-25" alt="Deathloop Logo">
+              <div class="d-flex flex-column pl-4">
+                <h4 class="card-title bold-helvetica">Deathloop</h4>
+                <p class="card-text text-wrap light-helvetica">DEATHLOOP transports you to the mysterious island of Blackreef, where an eternal struggle between two extraordinary assassins will determine the island's fate.</p>
+              <div class="d-flex justify-content-start">
+                <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">$49</button>
+                <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">Pre-Order</button>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="carousel-item" >
+              <div class="d-flex">
+                <img src="assets/img/halo.png" class="slider-img w-lg-100 w-25" alt="Halo Logo">
+              <div class="d-flex flex-column pl-4">
+                <h4 class="card-title bold-helvetica">Halo Infinite</h4>
+                <p class="card-text text-wrap light-helvetica">Halo Infinite. When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced.</p>
+              <div class="d-flex justify-content-start">
+                <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">$39</button>
+                <button type="submit" value="Search" class="px-3 py-2 mx-1 ads-button bg-weirdpink white">Pre-Order</button>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon  cntrl-prev rounded-circle p-3 bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon  cntrl-next rounded-circle p-3 bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <section class="m-3 px-0 showcase">
+    <h5 class="ml-2 py-3 my-3 showcase-title bold-helvetica lightgray"><i class="fas fa-dice-d20 pr-2 ml-4 ml-md-auto"></i>RPG GAMES</h5>
+    
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/rpg/fallout4.png" class="card-img-top" alt="Fallout 4 Logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Fallout 4</h5>
+          <p class="card-text">Steam</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">29$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/rpg/masseffect.png" class="card-img-top" alt="Mass Effect 3 Logo logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Mass Effect 3</h5>
+          <p class="card-text">Epic Games</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">19$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/rpg/skyrim.png" class="card-img-top" alt="Skyrim logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Elder Scrolls - Skyrim</h5>
+          <p class="card-text">GOG</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">39$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/rpg/witcher.png" class="card-img-top" alt="Witcher 3 logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Witcher 3</h5>
+          <p class="card-text">Epic Games</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">29$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+ 
+  </section>
+
+  <section class="m-3 px-0 showcase">
+   
+    <h5 class="ml-2 py-3 my-3 showcase-title bold-helvetica lightgray"><i class="fas fa-gamepad pr-2"></i>FPS GAMES</h5>
+
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/fps/cod.png" class="card-img-top" alt="Call of Duty Modern Warfare logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">COD - Modern Warfare</h5>
+          <p class="card-text">Steam</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">49$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/fps/doom.png" class="card-img-top" alt="Doom logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">DOOM</h5>
+          <p class="card-text">Epic Games</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">59$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/fps/metro.png" class="card-img-top" alt="Metro Last Light logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Metro Last Light</h5>
+          <p class="card-text">GOG</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">29$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/fps/wolfenstein.png" class="card-img-top" alt="Wolfenstein Young Blood logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Wolfenstein Young Blood</h5>
+          <p class="card-text">Steam</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">39$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="m-3 px-0 showcase">
+    
+    <h5 class="ml-2 py-3 my-3 showcase-title bold-helvetica lightgray"><i class="fas fa-chess-knight pr-2"></i>STRATEGY GAMES</h5>
+    <div class="row no-gutters border-top">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/strategy/civilization.png" class="card-img-top" alt="Civilization IV logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Civilization IV</h5>
+          <p class="card-text">Steam</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">49$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/strategy/desperados.png" class="card-img-top" alt="Desperados 3 logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Desperados III</h5>
+          <p class="card-text">Epic Games</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">59$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/strategy/stellaris.png" class="card-img-top" alt="Stellaris logo">
+        <div class="card-body px-0">
+          <h5 class="card-title medium-helvetica">Stellaris</h5>
+          <p class="card-text">GOG</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">29$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-white p-2 m-1 border-secondary">
+        <img src="assets/img/strategy/totalwar.png" class="card-img-top" alt="Total War Warhammer II logo">
+        <div class="card-body px-0">
+
+          <h5 class="card-title medium-helvetica">Total War Warhammer II</h5>
+          <p class="card-text">Steam</p>
+          <div class="d-flex justify-content-between">
+            <i class="p-2 fas fa-plus"></i>
+            <span class="price-tag">29$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-area">
+    <div class="company-info">
+      <div class="company-logo">
+      <img class="logo" src="assets/img/imperial-aquila-seeklogo.com.svg" alt="Savant Games Company Logo">
+      <h4 class="footer-title medium-helvetica pl-2">Savant Games</h4>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in asperiores tempore voluptates iusto perspiciatis corporis,    cupiditate minus magni beatae.
+      </p>
+    </div>  
+    
+    <div class="footer-categories">
+      <h5 class="category-title">Categories</h5>
+    <div class="footer-links">
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">NewsRoom</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Register</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Forgot Password</a></li>
+        <li><a href="">F.A.Q</a></li>
+      </ul>
+      <ul class="">
+        <li><a href="">Support Hub</a></li>
+        <li><a href="">Stay Safe</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Privacy & Cookies</a></li>
+      </ul>
+    </div>
+    </div>
+    
+  </footer>
+
+  <footer class="d-flex justify-content-center border-top border-secondary footer-area">
+    <p>Copyright @SavantDesign 2020. All Rights Reserved</p>
+  </footer>
+<!-- javascript bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
