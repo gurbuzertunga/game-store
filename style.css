@@ -200,7 +200,7 @@ aside h3 {
   margin-right: 10vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .footer-area {
     display: flex;
     align-items: center;
