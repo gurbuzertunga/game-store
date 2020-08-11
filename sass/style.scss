@@ -162,7 +162,7 @@ body {
 }
 
 .search-area {
-  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.6);
+  box-shadow: inset 0 0 0 1000px rgba(211, 82, 102, 0.8);
   background: url(/assets/img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,18 +253,20 @@ aside {
       max-width: 50%;
     }
 
-    .footer-links {
+    .footer-links,
+    .company-logo {
       display: flex;
+      justify-content: center;
     }
   }
 }
 
 @media screen and (min-width: 992px) {
   .company-info,
-  .company-logo,
-  .footer-links {
+  .footer-links,
+  .company-logo {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .company-info,
